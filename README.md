@@ -1,2 +1,40 @@
-# Soil-Quality-Sensor
-Developing a system composed by an ESP32-S3 microcontroller that receives data from a 7-in-1 soil quality sensor (C++ language used for programming). The data is then transmitted via Wi-Fi using using the MQTT protocol to a Raspberry Pi 4 that also acts as an access point. The IoT platform to which the data is transmitted is ThingsBoard, this being installed on the Raspberry Pi. Also, a PCB was developed for the ensamble formed by the microcontroller-sensor-transceiver to make a better wire managemenet for the system. In addition, a report was written and a comparison with other implementations of this project was made.
+# Soil Quality Sensor – IoT System (ESP32 + RS485 + Raspberry Pi)
+
+IoT system for real-time **soil quality monitoring**, developed during an Erasmus internship (Universitat de València, Jul–Sep 2023).  
+Reads **7 parameters** from an industrial RS485 soil sensor and sends data via **MQTT** to a local ThingsBoard server running on Raspberry Pi.
+
+**Measured parameters:**
+Nitrogen (N), Phosphorus (P), Potassium (K), pH, Moisture, Temperature, Electrical Conductivity.
+
+### System Architecture
+- **ESP32-S3** → reads RS485 sensor via **MAX3483** transceiver  
+- MQTT over Wi-Fi → **Raspberry Pi 4** (access point + Docker + ThingsBoard)
+- Live dashboard: charts, widgets & historical logs (local network)
+
+### Hardware & PCB
+- Custom PCB designed in **Altium Designer** for ESP32 + MAX3483 + connectors  
+- Includes: schematics, footprints, routing, design rules, Gerber & drill files
+- Board validated through DRC and exported for fabrication  
+*(PCB photos & 3D model available in repository)*
+
+### Repository contents
+- `final_code.ino` → ESP32 firmware (Arduino IDE)
+- PCB files: Gerbers, NC Drill, BOM, schematics
+- `Report.pdf` → system report (data flow, MQTT config, dashboard)
+- `Report-PCB.pdf` → PCB design report (rules, routing, 3D) :contentReference[oaicite:0]{index=0}
+- `Comparison with other approaches.pdf` → literature review (IoT/WSN) :contentReference[oaicite:1]{index=1}
+
+### Tech stack
+ESP32-S3, RS485 / MAX3483, Arduino C++, MQTT, ThingsBoard, Docker, Raspberry Pi, Altium Designer
+
+---
+
+## Highlights
+- Full IoT system from sensor → edge device → server → dashboard  
+- Stable communication using **serial data parsing + byte frame validation**  
+- Dashboard for real-time display and remote monitoring  
+
+---
+
+## 👤 Developed by
+**Vlad Veliciu & Victor Mihaiu** — Erasmus Research Internship, Universitat de València (Spain)  
