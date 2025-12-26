@@ -21,8 +21,8 @@ Nitrogen (N), Phosphorus (P), Potassium (K), pH, Moisture, Temperature, Electric
 - `final_code.ino` → ESP32 firmware (Arduino IDE)
 - PCB files: Gerbers, NC Drill, BOM, schematics
 - `Report.pdf` → system report (data flow, MQTT config, dashboard)
-- `Report-PCB.pdf` → PCB design report (rules, routing, 3D) :contentReference[oaicite:0]{index=0}
-- `Comparison with other approaches.pdf` → literature review (IoT/WSN) :contentReference[oaicite:1]{index=1}
+- `Report-PCB.pdf` → PCB design report (rules, routing, 3D)
+- `Comparison with other approaches.pdf` → literature review (IoT/WSN)
 
 ### Tech stack
 ESP32-S3, RS485 / MAX3483, Arduino C++, MQTT, ThingsBoard, Docker, Raspberry Pi, Altium Designer
