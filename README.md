@@ -36,5 +36,5 @@ ESP32-S3, RS485 / MAX3483, Arduino C++, MQTT, ThingsBoard, Docker, Raspberry Pi,
 
 ---
 
-## 👤 Developed by
+## Developed by
 **Vlad Veliciu & Victor Mihaiu** — Erasmus Research Internship, Universitat de València (Spain)  
