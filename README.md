@@ -18,11 +18,14 @@ Nitrogen (N), Phosphorus (P), Potassium (K), pH, Moisture, Temperature, Electric
 *(PCB photos & 3D model available in repository)*
 
 ### Repository contents
-- `final_code.ino` → ESP32 firmware (Arduino IDE)
-- PCB files: Gerbers, NC Drill, BOM, schematics
-- `Report.pdf` → system report (data flow, MQTT config, dashboard)
-- `Report-PCB.pdf` → PCB design report (rules, routing, 3D)
-- `Comparison with other approaches.pdf` → literature review (IoT/WSN)
+| File | Description |
+|------|-------------|
+| `README.md` | Project overview, system description, and usage details |
+| `final_code.ino` | ESP32 firmware implementing soil monitoring and MQTT communication |
+| `Schematics.PDF` | Electrical schematics of the system |
+| `Report.pdf` | Main project report and system documentation |
+| `Report-PCB.pdf` | PCB design report and layout documentation |
+| `Comparison with other approaches.pdf` | Comparative analysis with alternative soil monitoring solutions |
 
 ### Tech stack
 ESP32-S3, RS485 / MAX3483, Arduino C++, MQTT, ThingsBoard, Docker, Raspberry Pi, Altium Designer
