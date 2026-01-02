@@ -20,7 +20,6 @@ Nitrogen (N), Phosphorus (P), Potassium (K), pH, Moisture, Temperature, Electric
 ### Repository contents
 | File | Description |
 |------|-------------|
-| `README.md` | Project overview, system description, and usage details |
 | `final_code.ino` | ESP32 firmware implementing soil monitoring and MQTT communication |
 | `Schematics.PDF` | Electrical schematics of the system |
 | `Report.pdf` | Main project report and system documentation |
